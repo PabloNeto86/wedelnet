@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000;
+  color: #000;
+  font-size: 18px;
+}
+.carousel-inner{
+  max-height: 70vh;
+}
+.separator {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.oval {
+  width: 20px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 50px;
+  animation: spin 10s linear infinite;
+}
+
+.cyan {
+  background-color: dodgerblue;
+}
+
+.magenta {
+  background-color: #ff1493;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.backgound{
+  max-width: 98vw;
+  align-content: center;
+}
+.empresas {
+  display: flex;
+  justify-content: center;
+}
+.image-gallery img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.image-gallery img:last-child {
+  margin-right: 0;
+  align-content: center;
+}
+
+
+.logo{
+    width: 250px;
+}
+
+:root {
+  --primary-color: black;   /* Negro */
+  --secondary-color: #FFFF00; /* Amarillo */
+  --success-color: deeppink;   /* Magenta */
+  --dark-color: dodgerblue;  /* Cian */
+}
+
+header {
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: #fff;
+}
+.nav-link{
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+  transition: text-shadow 0.3s ease-in-out;
+  }
+  .navbar-toggler{
+    background-color: dodgerblue;
+  }
+#navbarNav{
+  justify-content: right;
+}
+.nav-link:hover{
+  color: dodgerblue;
+  text-shadow: 10px dodgerblue;
+  font-weight: 700;
+  }
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: #fff;
+}
+
+footer a {
+  color: var(--dark-color);
+  margin-right: 10px;
+  color: #fff;
+}
+.redes{
+  width: 5%;
+}
+
+
+h1{
+  color: deeppink;
+  font-family: 'Neonderthaw', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+.neon-effect {
+  color: white;
+  text-shadow: 0 0 10px deeppink, 0 0 20px deeppink, 0 0 30px deeppink, 0 0 40px deeppink, 0 0 70px deeppink, 0 0 80px deeppink, 0 0 100px deeppink, 0 0 150px deeppink;
+}
+h2{
+  color: #FF00FF;
+  text-align: center;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+/* Estilos comunes para todos los tamaños de pantalla */
+
+/* Estilos para móvil (hasta 699px) */
+@media (max-width: 699px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 10px;
+    }
+  
+  .logo{
+      width: 150px;
+  }
+}
+/* Estilos para tablet (entre 700px y 1339px) */
+@media (min-width: 700px) and (max-width: 1339px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    padding: 15px;
+    }
+  .logo{
+      width: 300px;
+  }
+}
+
+/* Estilos para PC (mayor a 1440px) */
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding: 20px;
+    }
+  
+  .logo{
+      width: 400px;
+  }
+}
